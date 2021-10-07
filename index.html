@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio (Version 2.1)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- Нормализатор стилей -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
+
+        <nav class="nav">
+          <ul class="nav__item">
+            <li><a class="nav__link current" href="./index.html">Студия</a></li>
+            <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li>
+            <a class="contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- MAIN_BLOCK -->
+
+      <section class="section main">
+        <!-- main -->
+        <div class="container">
+          <h1 class="main__title">Эффективные решения для вашего бизнеса</h1>
+          <button class="main__button" type="button">Заказать услугу</button>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+
+      <section class="section">
+        <!-- features -->
+        <div class="container">
+          <ul class="features">
+            <!-- features__item -->
+            <li>
+              <h3 class="features__title">Внимание к деталям</h3>
+              <p class="features__text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+
+            <li>
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+
+            <li>
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+
+            <li>
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- /container-->
+      </section>
+
+      <!-- PICTURES -->
+
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Чем мы занимаемся</h2>
+
+          <ul class="pictures">
+            <li>
+              <div class="pictures__item">
+                <img
+                  class="pictures__image"
+                  src="./images/pictures_directory/pictures_image1.jpg"
+                  alt="coding"
+                  width="370"
+                  height="294"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="pictures__item">
+                <img
+                  class="pictures__image"
+                  src="./images/pictures_directory/pictures_image2.jpg"
+                  alt="development design"
+                  width="370"
+                  height="294"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="pictures__item">
+                <img
+                  class="pictures__image"
+                  src="./images/pictures_directory/pictures_image3.jpg"
+                  alt="planchet with color specter"
+                  width="370"
+                  height="294"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- /container-->
+      </section>
+      <!-- /pictures -->
+
+      <!-- TEAM -->
+
+      <section class="section team">
+        <div class="container">
+          <h2 class="title">Наша команда</h2>
+
+          <ul class="team">
+            <li class="team__item">
+              <img
+                class="team__photo"
+                src="./images/team_directory/team_image1.jpg"
+                alt="Igor's photo"
+                width="270"
+                height="260"
+              />
+
+              <div class="team__info">
+                <h3 class="team__name">Игорь Демьяненко</h3>
+                <p class="team__prof">Product Designer</p>
+              </div>
+            </li>
+
+            <li class="team__item">
+              <img
+                class="team__photo"
+                src="./images/team_directory/team_image2.jpg"
+                alt="Igor's photo"
+                width="270"
+                height="260"
+              />
+
+              <div class="team__info">
+                <h3 class="team__name">Ольга Репина</h3>
+                <p class="team__prof">Frontend Developer</p>
+              </div>
+            </li>
+
+            <li class="team__item">
+              <img
+                class="team__photo"
+                src="./images/team_directory/team_image3.jpg"
+                alt="Igor's photo"
+                width="270"
+                height="260"
+              />
+
+              <div class="team__info">
+                <h3 class="team__name">Николай Тарасов</h3>
+                <p class="team__prof">Marketing</p>
+              </div>
+            </li>
+
+            <li class="team__item">
+              <img
+                class="team__photo"
+                src="./images/team_directory/team_image4.jpg"
+                alt="Igor's photo"
+                width="270"
+                height="260"
+              />
+
+              <div class="team__info">
+                <h3 class="team__name">Михаил Ермаков</h3>
+                <p class="team__prof">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- /container-->
+      </section>
+      <!-- /team -->
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="container">
+        <a class="logo" href="#">Web<span class="logo__footer">Studio</span></a>
+
+        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+
+        <ul class="contacts">
+          <li>
+            <a class="contact__footer" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact__footer" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- /container-->
+    </footer>
+  </body>
+</html>
