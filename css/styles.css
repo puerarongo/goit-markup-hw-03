@@ -41,10 +41,18 @@ h6 {
 ul {
 }
 
+/* !!! Containers !!! */
+
 .container {
-  width: 1200px;
+  min-width: 1200px;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.container.header {
+  display: flex;
+  /* центрирует контент по вертикале */
+  align-items: center;
 }
 
 /* !!! Header and Footer !!! */
@@ -68,6 +76,8 @@ ul {
   font-weight: bold;
   line-height: 1.19;
   color: var(--active-linc-color, lightblue);
+
+  margin-right: 93px;
 }
 
 .logo__header {
@@ -80,20 +90,45 @@ ul {
 
 .nav__item {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav__item li:not(:last-child),
+.contacts li:not(:last-child) {
+  /* всем элементам кроме последнего */
+  margin-right: 50px;
 }
 
 .nav__link {
   text-decoration: none;
   color: inherit;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts {
   list-style: none;
+
+  padding: 0;
+  margin-left: auto;
+  display: flex;
 }
 
 .contact {
   text-decoration: none;
   color: var(--text-color, gray);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts__footer {
+  list-style: none;
 }
 
 .contact__footer {
@@ -170,7 +205,7 @@ ul {
   background-color: #188ce8;
 }
 
-/* !!! Features, Pictures and Team block !!! */
+/* !!! Features  block !!! */
 
 .title {
   font-size: 36px;
@@ -182,9 +217,19 @@ ul {
 
 .features {
   list-style: none;
-
-  width: 270px;
   text-align: left;
+
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.features li {
+  width: 270px;
+}
+
+.features li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features__title {
@@ -199,9 +244,19 @@ ul {
   line-height: 1.7;
 }
 
+/* !!! Pictures block !!! */
+
 .pictures {
   list-style: none;
+
+  display: flex;
 }
+
+.pictures__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* !!! Team block !!! */
 
 .section.team {
   background-color: var(--background-team);
