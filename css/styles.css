@@ -49,7 +49,7 @@ ul {
   margin-right: 15px;
 }
 
-.container.header {
+.container.head {
   display: flex;
   /* центрирует контент по вертикале */
   align-items: center;
@@ -250,6 +250,8 @@ ul {
   list-style: none;
 
   display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 .pictures__item:not(:last-child) {
@@ -258,12 +260,16 @@ ul {
 
 /* !!! Team block !!! */
 
-.section.team {
+.section__band {
   background-color: var(--background-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team {
   list-style: none;
+
+  display: flex;
 }
 
 .team__item {
@@ -274,6 +280,10 @@ ul {
   width: 270px;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team__photo {
