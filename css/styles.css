@@ -140,8 +140,13 @@ h6 {
 }
 
 .contact__footer {
+  display: block;
   text-decoration: none;
   color: var(--contact-footer-color, white);
+}
+
+.contacts__footer li:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .nav__link:hover,
@@ -158,11 +163,13 @@ h6 {
 }
 
 .footer .logo {
+  display: block;
   margin-bottom: 20px;
 }
 
 .address {
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 /* !!! Main block !!! */
