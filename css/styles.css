@@ -196,11 +196,12 @@ p {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  margin-top: 0;
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
-  width: 650px;
 }
 
 .main__button {
@@ -303,7 +304,6 @@ p {
   background-color: var(--header-white, white);
   line-height: 1.19;
 
-  height: 368px;
   width: 270px;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
@@ -313,8 +313,8 @@ p {
   margin-right: 30px;
 }
 
-.team__photo {
-  margin-bottom: 30px;
+.team__info {
+  padding: 30px 0;
 }
 
 .team__name {
@@ -329,6 +329,21 @@ p {
 }
 
 /* !!! Portfolio !!! */
+
+.visually-hidden {
+  /* Скрывает заголовок */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .filter {
   list-style: none;
@@ -364,7 +379,7 @@ p {
   background-color: var(--active-linc-color, lightblue);
 }
 
-.portfolio__item {
+.portfolio__items {
   list-style: none;
 
   display: flex;
@@ -372,10 +387,7 @@ p {
 }
 
 .portfolio__project {
-  height: 404px;
   width: 370px;
-
-  border-bottom: 1px solid var(--portfolio-border-color, gray);
 }
 
 .portfolio__project:not(:nth-child(3n + 3)) {
@@ -386,8 +398,11 @@ p {
   margin-bottom: 30px;
 }
 
-.portfolio__image {
-  margin-bottom: 20px;
+.portfolio__item {
+  padding: 20px 24px;
+  border-left: 1px solid var(--portfolio-border-color, gray);
+  border-right: 1px solid var(--portfolio-border-color, gray);
+  border-bottom: 1px solid var(--portfolio-border-color, gray);
 }
 
 .portfolio__title {
@@ -395,7 +410,6 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  padding: 0 24px;
   margin-bottom: 4px;
 }
 
@@ -403,7 +417,4 @@ p {
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color, gray);
-
-  padding: 0 24px;
-  margin-bottom: 20px;
 }
